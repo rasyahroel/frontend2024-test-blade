@@ -11,7 +11,8 @@
     <title>Sign Up ASI</title>
 
     <style>
-        body {
+        #gradient {
+            height: 750px;
             background-image: linear-gradient(black, white);
         }
 
@@ -26,7 +27,7 @@
     </style>
 </head>
 
-<body>
+<body id="gradient">
     <div class="position-absolute top-50 start-50 translate-middle">
         <form class="card py-3" style="width: 20rem;" id="email-red">
             <label for="title" class="text-center">Sign Up</label>
