@@ -5,10 +5,10 @@ Jawaban Pilihan Ganda
 
 1. e.
 2. c.
-3. c ()
+3. c
 4. d.
 5. c.
-6. c. ()
+6. c.
 7. c.
 8. c.
 9. b.
