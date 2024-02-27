@@ -12,11 +12,12 @@
 
     <style>
         body {
-            background: linear-gradient(to bottom, black, white);
+            background-image: linear-gradient(black, white);
         }
 
-        #submit:hover {
-            background-color: blue;
+        .submit-button {
+            background-color: gray;
+            cursor: pointer;
         }
 
         .border-red {
@@ -45,7 +46,8 @@
                         aria-describedby="passwordHelpBlock" placeholder="Confirm your password">
                 </div>
                 <div class="text-center pt-5">
-                    <button id="submit" type="submit" class="btn btn-secondary py-2 px-4 my-2 border-0">Sign
+                    <button id="submit" type="submit"
+                        class="btn btn-secondary py-2 px-4 my-2 border-0 submit-button">Sign
                         Up</button>
                     <p>Already registered? <a href="#" class="text-decoration-none text-black">Sign in</a></p>
                 </div>
@@ -79,6 +81,15 @@
                 $('#email').focus(function() {
                     $(this).removeClass('border-red');
                 })
+
+                $('.submit-button').hover(
+                    function() {
+                        $(this).css('background-color', 'blue');
+                    },
+                    function() {
+                        $(this).css('background-color', 'gray');
+                    }
+                );
             })
         </script>
 </body>
